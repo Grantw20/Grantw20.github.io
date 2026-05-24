@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sleek Minimal Website</title>
-    <link rel="stylesheet" href="src/styles/main.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sleek Minimal — Portfolio</title>
+  <link rel="stylesheet" href="src/styles/main.css" />
 </head>
 <body>
-    <!-- Header Component -->
-    <div id="header">
-        <!-- Include header.html content here -->
-    </div>
+  <!-- header will be loaded here -->
+  <div id="site-header" role="banner"></div>
 
-    <main>
-        <h1>Welcome to My Sleek Minimal Website</h1>
-        <p>This is a simple and elegant design focused on content.</p>
-    </main>
+  <main id="content" role="main">
+    <section class="hero">
+      <div class="container">
+        <h1 class="title">Crafted Simplicity</h1>
+        <p class="lead">A sleek, minimal template built to showcase content clearly — refined, dark, and intentional.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#work">View Work</a>
+          <a class="btn ghost" href="#about">About</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- Footer Component -->
-    <div id="footer">
-        <!-- Include footer.html content here -->
-    </div>
+    <section id="work" class="container section">
+      <h2 class="section-title">Selected Work</h2>
+      <div class="grid features">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>Elegant product landing page with focused messaging and clear call-to-action.</p>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Clean typographic layout for editorial content and portfolios.</p>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>Lightweight interactions and accessible components for broad audiences.</p>
+        </article>
+      </div>
+    </section>
 
-    <script src="src/scripts/main.js"></script>
+    <section id="about" class="container section muted">
+      <div class="split">
+        <div>
+          <h2 class="section-title">About</h2>
+          <p>Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+          <p>Filler text: Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+        </div>
+        <aside>
+          <h4>Quick Facts</h4>
+          <ul class="facts">
+            <li><strong>Role</strong> Designer / Developer</li>
+            <li><strong>Location</strong> Remote</li>
+            <li><strong>Availability</strong> Open to projects</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer will be loaded here -->
+  <div id="site-footer" role="contentinfo"></div>
+
+  <script src="src/scripts/main.js"></script>
 </body>
 </html>

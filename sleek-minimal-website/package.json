@@ -1,0 +1,22 @@
+{
+  "name": "sleek-minimal-website",
+  "version": "1.0.0",
+  "description": "A sleek minimalist website template.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "keywords": [
+    "minimalist",
+    "website",
+    "template"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

@@ -4,6 +4,7 @@
   --muted: #9aa0a6;
   --text: #e9e9e9;
   --gold: #D4AF37;
+  --light-gold: #eac367;   
   --glass: rgba(255,255,255,0.03);
   --radius: 10px;
   --max-width: 1100px;
@@ -148,9 +149,12 @@ body{
   border-radius:var(--radius);
   padding:20px;
   border:1px solid rgba(255,255,255,0.03);
-  box-shadow:0 6px 18px rgba(2,2,2,0.5);
+  box-shadow:var(--accent-glow);
 }
-.card h3{margin:0 0 8px}
+.card h3{
+    margin:0 0 8px;
+    color: var(--light-gold);
+}
 .card p{margin:0;color:var(--muted)}
 
 .muted{background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent); padding-top:22px; padding-bottom:22px;border-top:1px solid rgba(255,255,255,0.02)}

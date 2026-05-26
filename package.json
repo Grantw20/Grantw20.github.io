@@ -1,7 +1,7 @@
 {
-  "name": "sleek-minimal-website",
+  "name": "edward-grant-woodruff",
   "version": "1.0.0",
-  "description": "A sleek minimalist website template.",
+  "description": "Work history, projects, publications",
   "main": "index.html",
   "scripts": {
     "start": "live-server",
@@ -13,7 +13,7 @@
     "website",
     "template"
   ],
-  "author": "Your Name",
+  "author": "Grant Woodruff",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {

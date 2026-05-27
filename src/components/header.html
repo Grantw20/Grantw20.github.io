@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-    <header>
-        <h1>My Sleek Minimal Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="container header-inner" role="navigation" aria-label="Main">
+        <div class="header-right">
+            <nav class="nav" aria-label="Primary">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a class="btn primary resume" href="/src/components/Edward_Woodruff.pdf" download title="Download Resumé">Resumé
+                    <img src="/src/components/Images/download.png" alt="" width="16" height="16" style="vertical-align:middle;margin-left:8px;filter:brightness(0.08) saturate(1.2)">
+                </a>
+            </div>
+        </div>
     </header>
 </body>
 </html>

@@ -8,17 +8,35 @@
 </head>
 <body>
   <!-- header will be loaded here -->
-  <div id="site-header" role="banner"></div>
+  <div id="site-header" role="banner">
+    <header class="container header-inner" role="navigation" aria-label="Main">
+
+      <div class="header-right">
+        <nav class="nav" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn primary resume" href="/src/components/Edward_Woodruff.pdf" download title="Download Resumé">Resumé
+            <img src="/src/components/Images/download.png" alt="" width="16" height="16" style="vertical-align:middle;margin-left:8px;filter:brightness(0.08) saturate(1.2)">
+          </a>
+        </div>
+      </div>
+    </header>
+  </div>
 
   <main id="content" role="main">
     <section class="hero">
       <div class="container">
         <h1 class="title">Grant Woodruff</h1>
-        <p class="lead">A passionate engineer, climber, and only slightly addicted to coffee</p>
+        <div class="lead-wrap">
+          <p class="lead">A passionate engineer, climber, and only slightly addicted to<button id="coffee-btn" class="emoji-trigger" aria-label="Celebrate coffee">coffee</button></p>
+        </div>
         <div class="cta-row">
           <a class="btn ghost" href="#work">View Work</a>
           <a class="btn ghost" href="#about">About</a>
-          <a class="btn primary" href="/src/components/Edward_Woodruff.pdf" download>Resumé <img src="/src/components/Images/download.png" alt="Download Resume" width="20" height="20" style="vertical-align:middle;margin:0px 1px"></a>
         </div>
       </div>
     </section>
@@ -26,45 +44,61 @@
     <section id="Work" class="container section">
       <h2 class="section-title">Work History</h2>
       <div class="grid features">
-        <article class="card">
+        <article class="card collapsible" tabindex="0" role="button">
           <h3>
             <img src="/src/components/Images/tesla-logo.png" alt="Tesla Logo" width="25" height="25" style="vertical-align:middle;margin:0px 5px">
             Manufacturing Test Engineer</h3>
           <h4>May 2025 - Present (--)</h4>
+          <div class="card-summary">Short overview: Responsible for production test strategy and reliability verification.</div>
+          <div class="card-details" hidden>
+            <p>Expanded details: Lead cross-functional initiatives to improve throughput and yield. Developed test plans, authored automation scripts, and collaborated with manufacturing teams to implement robust verification processes. Tools: Python, LabVIEW, data analysis.</p>
+          </div>
         </article>
-        <article class="card">
+
+        <article class="card collapsible" tabindex="0" role="button">
           <h3>
             <img src="/src/components/Images/tesla-logo.png" alt="Tesla Logo" width="25" height="25" style="vertical-align:middle;margin:0px 5px">
             Test Systems Engineer (Intern)</h3>
           <h4>May 2024 - Sep. 2024 (4mo)</h4>
-          <p>Designed, sourced, and implemented safety control systems, upgraded existing control software (LabVIEW & PLC), and authored process automation tools.</p>
+          <div class="card-summary">Designed, sourced, and implemented safety control systems and upgraded control software.</div>
+          <div class="card-details" hidden>
+            <p>Expanded details: Implemented PLC and LabVIEW improvements, created automated checklists for safety interlocks, and reduced setup time by automating hardware configuration. Collaborated with suppliers and QA to validate designs.</p>
+          </div>
         </article>
-        <article class="card">
+
+        <article class="card collapsible" tabindex="0" role="button">
           <h3>
             <img src="/src/components/Images/tesla-logo.png" alt="Tesla Logo" width="25" height="25" style="vertical-align:middle;margin:0px 5px">
             Battery Abuse Test Engineer (Intern)</h3>
           <h4>Sep. 2023 - May 2024 (9mo)</h4>
-          <p> Safely conducted propagating thermal event tests on Tesla battery packs and energy products, wrote test-system control software (LabVIEW), and automated data processing workflows (MATLAB).</p>
+          <div class="card-summary">Conducted safety testing and automated data workflows for battery systems.</div>
+          <div class="card-details" hidden>
+            <p>Expanded details: Performed propagating thermal event tests, designed safe test fixtures, developed LabVIEW control sequences, and authored MATLAB pipelines for post-test analysis and reporting.</p>
+          </div>
         </article>
-        <article class="card">
+
+        <article class="card collapsible" tabindex="0" role="button">
           <h3>
             <img src="/src/components/Images/spacex-logo.png" alt="SpaceX Logo" width="40" height="25" style="vertical-align:top;margin:0px 0px">
             PCB Supplier Development Engineer (Intern)
           </h3>
           <h4>May 2023 - Aug. 2023 (3mo)</h4>
-          <p></p>
+          <div class="card-summary">Worked with suppliers to qualify PCB processes and improve manufacturability.</div>
+          <div class="card-details" hidden>
+            <p>Expanded details: Audited supplier capabilities, implemented process controls to reduce defects, and coordinated corrective actions that improved yield and part quality.</p>
+          </div>
         </article>
       </div>
     </section>
 
     <section id="about" class="container section muted">
       <div class="split">
-        <div>
+        <div class="card">
           <h2 class="section-title">About</h2>
           <p>Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
           <p>Filler text: Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
         </div>
-        <aside>
+        <aside class="card">
           <h4>Quick Facts</h4>
           <ul class="facts">
             <li><strong>Role</strong> Manufacturing Test Engineer</li>
@@ -72,7 +106,6 @@
             <li><strong>Availability</strong> Open to projects</li>
           </ul>
         </aside>
-    </img> <img>
       </div>
     </section>
   </main>

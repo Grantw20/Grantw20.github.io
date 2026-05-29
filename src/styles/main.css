@@ -217,7 +217,7 @@ body{
 
 .split{display:flex;gap:28px;align-items:flex-start}
 .split > div{flex:1}
-.split aside{width:280px;flex:0 0 280px;background:linear-gradient(180deg,var(--card), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);box-shadow:var(--accent-glow)}
+.split aside{width:340px;flex:0 0 340px;background:linear-gradient(180deg,var(--card), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);box-shadow:var(--accent-glow)}
 .facts{list-style:none;padding:0;margin:0}
 .facts li{color:var(--muted);padding:6px 0;border-bottom:1px dashed rgba(255,255,255,0.02)}
 
@@ -309,6 +309,41 @@ a.inline-link:hover{text-decoration:underline}
   transition:transform 900ms cubic-bezier(.2,.8,.25,1),opacity 900ms ease;
 }
 
+.gallery{display:flex;gap:10px;flex-wrap:wrap}
+.gallery a{display:inline-block;border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
+.gallery img{display:block;height:80px;width:auto;object-fit:cover;}
+
+/* modal images -- ensure images inside modal scale nicely */
+.modal .gallery img{height:120px}
+.modal .modal-body{display:flex;flex-direction:column;gap:12px}
+
+.about-avatar{
+  width:96px;
+  height:96px;
+  object-fit:cover;
+  border-radius:12px;
+  float:left;
+  margin-right:16px;
+  margin-bottom:8px;
+  border:1px solid rgba(255,255,255,0.03);
+}
+
 @media (max-width:640px){
   .modal{padding:18px;border-radius:12px}
+  .about-avatar{float:none;display:block;margin:0 0 14px 0;width:80px;height:80px}
+}
+
+/* About card text justification */
+#about .card p{
+  text-align:justify;
+  text-align-last:left;
+  -webkit-hyphens:none;
+  -ms-hyphens:none;
+  hyphens:none;
+  overflow-wrap:normal;
+  word-break:normal;
+  text-justify:inter-word;
+}
+@media (max-width:640px){
+  #about .card p{ text-align:left }
 }

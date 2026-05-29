@@ -14,6 +14,7 @@
       <div class="header-right">
         <nav class="nav" aria-label="Primary">
           <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -48,10 +49,14 @@
           <h3>
             <img src="/src/components/Images/tesla-logo.png" alt="Tesla Logo" width="25" height="25" style="vertical-align:middle;margin:0px 5px">
             Manufacturing Test Engineer</h3>
-          <h4>May 2025 - Present (--)</h4>
-          <div class="card-summary">Short overview: Responsible for production test strategy and reliability verification.</div>
+          <h4>May 2025 - Present</h4>
+          <div class="card-summary">Developed and maintained production test software (Python, LabVIEW, TestStand, and Go), authored embedded protocol drivers (Python), troubleshot production escalations, and owned new tester deployments.</div>
           <div class="card-details" hidden>
-            <p>Expanded details: Lead cross-functional initiatives to improve throughput and yield. Developed test plans, authored automation scripts, and collaborated with manufacturing teams to implement robust verification processes. Tools: Python, LabVIEW, data analysis.</p>
+            <ul>
+              <li>Co-developed a Python firmware flashing framework with custom protocol drivers, deploying across 50+ testers in 8 facilities — cutting cycle time 40% and improving yield 5%</li>
+              <li>Independently owned 15+ repos across Python, LabVIEW, Beckhoff, and Go, driving the full software lifecycle from feature dev to on-call support</li>
+              <li>Led end-to-end tester deployment for 3 projects including Factory and Site Acceptance Testing (FAT / SAT)</li>
+            </ul>
           </div>
         </article>
 
@@ -60,9 +65,12 @@
             <img src="/src/components/Images/tesla-logo.png" alt="Tesla Logo" width="25" height="25" style="vertical-align:middle;margin:0px 5px">
             Test Systems Engineer (Intern)</h3>
           <h4>May 2024 - Sep. 2024 (4mo)</h4>
-          <div class="card-summary">Designed, sourced, and implemented safety control systems and upgraded control software.</div>
+          <div class="card-summary">Designed, sourced, and implemented safety control systems, upgraded existing control software (LabVIEW & PLC), and authored process automation tools. </div>
           <div class="card-details" hidden>
-            <p>Expanded details: Implemented PLC and LabVIEW improvements, created automated checklists for safety interlocks, and reduced setup time by automating hardware configuration. Collaborated with suppliers and QA to validate designs.</p>
+            <ul>
+              <li>Owned all LabVIEW controls programming for a custom Vehicle Crusher test rig with load cells, VFDs, encoders, and E-Stop systems</li>
+              <li>Authored PLC & HMI code to monitor test chamber conditions and track cell propagation rates in real time</li>
+            </ul>
           </div>
         </article>
 
@@ -71,9 +79,12 @@
             <img src="/src/components/Images/tesla-logo.png" alt="Tesla Logo" width="25" height="25" style="vertical-align:middle;margin:0px 5px">
             Battery Abuse Test Engineer (Intern)</h3>
           <h4>Sep. 2023 - May 2024 (9mo)</h4>
-          <div class="card-summary">Conducted safety testing and automated data workflows for battery systems.</div>
+          <div class="card-summary">Safely conducted propagating thermal event tests on Tesla battery packs and energy products, wrote test-system control software (LabVIEW), and automated data processing workflows (MATLAB).</div>
           <div class="card-details" hidden>
-            <p>Expanded details: Performed propagating thermal event tests, designed safe test fixtures, developed LabVIEW control sequences, and authored MATLAB pipelines for post-test analysis and reporting.</p>
+            <ul>
+              <li>Built a MATLAB video analysis pipeline to calculate cell propagation rates, saving 3hrs per test</li>
+              <li>Automated flammability gas flow testing via LabVIEW across constant, PWM, and vector flow conditions</li>
+            </ul>
           </div>
         </article>
 
@@ -83,9 +94,46 @@
             PCB Supplier Development Engineer (Intern)
           </h3>
           <h4>May 2023 - Aug. 2023 (3mo)</h4>
-          <div class="card-summary">Worked with suppliers to qualify PCB processes and improve manufacturability.</div>
+          <div class="card-summary">Qualified novel PCB assembly processes and partnered with suppliers to improve yield, reduce cost, and reduce weight at scale.</div>
           <div class="card-details" hidden>
-            <p>Expanded details: Audited supplier capabilities, implemented process controls to reduce defects, and coordinated corrective actions that improved yield and part quality.</p>
+            <ul>
+              <li>Developed a new PCB stud mounting technique generating $6.3M in savings, cutting build time 80 min/board and reducing satellite weight 1.5kg</li>
+              <li>Ran DOEs to optimize solder geometry and qualified rework procedures that improved global PCB yield 1.7%, saving $1.3M</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="container section">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid features">
+        <article class="card">
+          <h3>SABR</h3>
+          <p class="card-summary">[Small-Scale Rotating Detonation Engine] Built for my capstone project where I was the Data Acquisition and Controls Lead, this project won best in the Mechanical and Aerospace Department.</p>
+          <p style="margin-top:10px"><a class="inline-link" href="https://www.youtube.com/watch?v=srb3Dv_vAVQ">Project Showcase</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Pulsed Evaporative Spray Cooling</h3>
+          <p class="card-summary">Developed a high-heat flux pulsed evaporative spray cooling testbed for advanced thermal management as an Undergraduate Researcher. Checkout some of our publications </p>
+          <p style="margin-top:10px"><a class="inline-link" href="https://doi.org/10.1016/j.ijheatmasstransfer.2024.126596">Intl. Journal of Heat and Mass Transfer</a></p>
+          <p><a class="inline-link" href="https://doi.org/10.1088/1873-7005/adc2cd">Fluid Dynamics Research</a></p>
+          <p><a class="inline-link" href="https://doi.org/10.1109/ITherm55368.2023.10177517">IEEE iTherm 2023</a></p>
+        </article>
+
+        <article class="card collapsible" tabindex="0" role="button">
+          <h3>Gameboy Restoration</h3>
+          <p class="card-summary">Brought the 1990's back to life by restoring multiple Gameboys to their former glory with PCB trace repairs, custom shell designs, and modern display upgrades.</p>
+          <p style="margin-top:10px; color:gold">Click here for some cool pics!</p>
+          <div class="card-details" hidden>
+            <div class="gallery">
+              <a href="src/components/Images/IMG_9200.png" target="_blank" rel="noopener"><img src="src/components/Images/IMG_9200.png" alt="Gameboy restoration 1"></a>
+              <a href="src/components/Images/IMG_9203.png" target="_blank" rel="noopener"><img src="src/components/Images/IMG_9203.png" alt="Gameboy restoration 2"></a>
+              <a href="src/components/Images/IMG_9205.png" target="_blank" rel="noopener"><img src="src/components/Images/IMG_9205.png" alt="Gameboy restoration 3"></a>
+              <a href="src/components/Images/IMG_9206.png" target="_blank" rel="noopener"><img src="src/components/Images/IMG_9206.png" alt="Gameboy restoration 4"></a>
+            </div>
           </div>
         </article>
       </div>
@@ -94,16 +142,21 @@
     <section id="about" class="container section muted">
       <div class="split">
         <div class="card">
-          <h2 class="section-title">About</h2>
-          <p>Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-          <p>Filler text: Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+          <h2 style="margin-top: 3px;">About</h2>
+          <img src="src/components/Images/linkedin.jpeg" alt="LinkedIn" class="about-avatar">
+          <p>Hey, glad you found this page! I'm a passionate engineer who loves problem solving and optimization — I know that describes pretty much every engineer out there, but I really mean it.</p>
+          <p style="margin-top:5px;">I grew up in Orlando, Florida and ended up staying for school, graduating from the University of Central Florida with a B.S. in Aerospace Engineering and a Math minor. Engineering isn't my whole life though. Outside of work I love the outdoors, climbing, traveling, playing guitar, getting destroyed by children at chess, and above all else — making coffee.</p>
+          <p style="margin-top:5px;">Eventually I'd love to open my own coffee shop — but knowing me, it'd end up being half cafe, half engineering lab. Espresso is deceptively complex, so many things can affect the flavor: temperature, pressure, grind size, extraction time, even water chemistry. Finding a way to systematically dial all of that in sounds like the most fun problem I could work on. If that sounds interesting to you too, let's talk.</p>
+          <p style="margin-top:5px;">Other than that, I'd describe myself as curious, hardworking, driven, and maybe a little weird. If you have any questions on my work or projects, or just want to connect, please dont hesitate to reach out!</p>
         </div>
         <aside class="card">
-          <h4>Quick Facts</h4>
+          <h2 style="margin-top: 3px;">Info + Contact</h2>
           <ul class="facts">
-            <li><strong>Role</strong> Manufacturing Test Engineer</li>
-            <li><strong>Location</strong> Austin, TX</li>
-            <li><strong>Availability</strong> Open to projects</li>
+            <li><strong>Current Role:</strong> Manufacturing Test Engineer</li>
+            <li><strong>Location:</strong> Austin, TX</li>
+            <li><strong>Phone:</strong> (407) 462-3609</li>
+            <li><strong>Email:</strong> egwoodruff20@gmail.com</li>
+            <li><strong><a href="https://www.linkedin.com/in/egw0/">Linkedin</a></strong> </li>
           </ul>
         </aside>
       </div>
